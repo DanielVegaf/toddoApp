@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --pri-color: #2c3e50;
+    --secun-color: #2ecc71;
+    --third-color: #27ae60;
+    --alert-color: #243342;
+    --alert-wr: #2980b9;
+    --white-color: #ecf0f1;
+    --radius: 5px;
+    --transition: .3s ease-in-out;
+}
+
+body{
+    background: #34495e;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background: var(--pri-color);
+    width: 400px;
+    padding: 10px;
+    margin: 110px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius);
+}
+
+.container-title{
+    text-align: center;
+    color: var(--white-color);
+    padding: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-input{
+    text-align: center;
+    min-height: 40px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    background: var(--white-color);
+    border-radius: var(--radius);
+}
+
+.formulario-btn{
+    width: 100px;
+    margin: 15px auto;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: var(--radius);
+    background: var(--secun-color);
+    color: var(--white-color);
+    --transition: .2s ease-in-out;
+}
+
+.formulario-btn:active{
+    transform: scale(.9);
+    --transition: .2s ease-in-out;
+}
+
+.formulario-btn:hover{
+    background: var(--third-color);
+    transition: var(--transition);
+}
+
+.lista-tareas{
+    margin: 20px 0;
+}
+
+.alert{
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: var(--radius);
+    color: var(--white-color);;
+    background: var(--alert-color);
+    transition: var(--transition);
+}
+
+.alert-wr{
+    background: var(--alert-wr);
+    transition: var(--transition);
+}
+
+.fas{
+    cursor: pointer;
+    margin: 0 5px;
+    --transition: .2s ease-in-out;
+}
+.fas:active{
+    transform: scale(.9);
+    --transition: .2s ease-in-out;
+}
+
+.fa-check-circle{
+    color: #2ecc71;
+    transition: var(--transition);
+}
+.fa-check-circle:hover{
+    color: #27ae60;
+    transition: var(--transition);
+}
+
+.fa-minus-circle{
+    color: #e74c3c;
+    transition: var(--transition);
+}
+.fa-minus-circle:hover{
+    color: #c0392b;
+    transition: var(--transition);
+}
+
+
