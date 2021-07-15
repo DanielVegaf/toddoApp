@@ -23,13 +23,12 @@ body{
 }
 
 .container{
-    background: var(--pri-color);
-    width: 400px;
+    width: 40%;
     padding: 10px;
-    margin: 110px auto;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
-    border-radius: var(--radius);
+    transition: var(--transition);
 }
 
 .container-title{
@@ -41,6 +40,8 @@ body{
 .formulario{
     display: flex;
     flex-direction: column;
+    background: var(--pri-color);
+    transition: var(--transition);
 }
 
 .formulario-input{
@@ -51,7 +52,8 @@ body{
     outline: none;
     border: none;
     background: var(--white-color);
-    border-radius: var(--radius);
+    transition: var(--transition);
+    border-radius: 5px 5px 0 0;
 }
 
 .formulario-btn{
@@ -79,6 +81,7 @@ body{
 
 .lista-tareas{
     margin: 20px 0;
+    transition: var(--transition);
 }
 
 .alert{
@@ -126,4 +129,23 @@ body{
     transition: var(--transition);
 }
 
+@media screen and (max-width: 800px) {
+    .container{
+        width: 100%;
+       
+    }
+}
 
+@media screen and (max-width: 655px) {
+    .container{
+        width: 100%;
+       
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .container{
+        width: 100%;
+       
+    }
+}
