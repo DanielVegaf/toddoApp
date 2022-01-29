@@ -3,4 +3,4 @@
 # View Demo
 https://toddoo.netlify.app/
 
-jdsadj
+Simple Todo App in vanilla JavaScript
